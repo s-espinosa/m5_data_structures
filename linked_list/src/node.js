@@ -1,15 +1,14 @@
 class Node {
   constructor(data) {
     this.data = data
-    this.nextnode = null
+    this.nextNode = null
   }
 
-  push(data) {
-    if (this.nextnode === null) {
-      var node = new Node(data)
-      this.nextnode = node
+  push(node) {
+    if (this.nextNode === null) {
+      this.nextNode = node
     } else {
-      this.nextnode.push(data)
+      this.nextNode.push(node)
     }
   }
 }

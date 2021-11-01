@@ -6,11 +6,11 @@ class LinkedList {
   }
 
   push(data) {
+    var newNode = new Node(data)
     if (this.head === null) {
-      var node = new Node(data)
-      this.head = node
+      this.head = newNode
     } else {
-      this.head.push(data)
+      this.head.push(newNode)
     }
   }
 }
